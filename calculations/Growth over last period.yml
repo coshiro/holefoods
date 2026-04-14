@@ -1,0 +1,4 @@
+unique_name: Growth over last period
+object_type: metric_calc
+label: Growth Over Last Period
+expression: "(([DateOfSale].[Actual].CurrentMember,[Measures].[m_ID_distinct])-([DateOfSale].[Actual].CurrentMember.Lag(1),[Measures].[m_ID_distinct]))/([DateOfSale].[Actual].CurrentMember.Lag(1),[Measures].[m_ID_distinct])"

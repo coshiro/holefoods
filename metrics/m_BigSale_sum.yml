@@ -1,0 +1,6 @@
+unique_name: m_BigSale_sum
+object_type: metric
+label: Big Sale Count
+calculation_method: sum
+dataset: SalesTransaction.dataset
+column: BigSale

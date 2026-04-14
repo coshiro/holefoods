@@ -1,0 +1,85 @@
+unique_name: Outlet
+object_type: dimension
+label: Outlet
+type: standard
+
+hierarchies:
+
+  - unique_name: Outlet_2
+    label: H1
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Region
+
+      - unique_name: Country
+
+      - unique_name: Outlet_2
+
+        secondary_attributes:
+
+          - unique_name: d_Latitude
+            label: Latitude
+            dataset: Outlet.dataset
+            key_columns:
+              - Latitude
+            name_column: Latitude
+            sort_column: Latitude
+
+          - unique_name: d_Longitude
+            label: Longitude
+            dataset: Outlet.dataset
+            key_columns:
+              - Longitude
+            name_column: Longitude
+            sort_column: Longitude
+
+          - unique_name: d_Population
+            label: Population
+            dataset: Outlet.dataset
+            key_columns:
+              - Population
+            name_column: Population
+            sort_column: Population
+
+level_attributes:
+
+  - unique_name: Country
+    label: Country
+    dataset: country.dataset
+    key_columns:
+      - ID
+    name_column: Name
+
+  - unique_name: Outlet_2
+    label: City
+    dataset: Outlet.dataset
+    key_columns:
+      - ID
+    name_column: City
+
+  - unique_name: Region
+    label: Region
+    dataset: Region.dataset
+    key_columns:
+      - ID
+    name_column: Name
+
+relationships:
+
+  - from:
+      dataset: country.dataset
+      join_columns:
+        - region
+    to:
+      level: Region
+    type: snowflake
+
+  - from:
+      dataset: Outlet.dataset
+      join_columns:
+        - country
+    to:
+      level: Country
+    type: snowflake

@@ -1,0 +1,22 @@
+unique_name: Units_Sold
+object_type: dimension
+label: Units_Sold
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: Units_Sold
+    label: Units_Sold
+
+    levels:
+
+      - unique_name: Units_Sold
+
+level_attributes:
+
+  - unique_name: Units_Sold
+    label: Units_Sold
+    dataset: SalesTransaction.dataset
+    key_columns:
+      - UnitsSold
+    name_column: UnitsSold

@@ -1,0 +1,66 @@
+unique_name: Product
+object_type: dimension
+label: Product
+type: standard
+
+hierarchies:
+
+  - unique_name: P1
+    label: P1
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Product Category
+
+      - unique_name: Product Name
+
+        secondary_attributes:
+
+          - unique_name: d_Name
+            label: Name
+            dataset: Product.dataset
+            key_columns:
+              - Name
+            name_column: Name
+            sort_column: Name
+
+          - unique_name: d_Price
+            label: UnitPrice
+            dataset: Product.dataset
+            key_columns:
+              - Price
+            name_column: Price
+            sort_column: Price
+
+          - unique_name: d_PriceSquared
+            label: PriceSquared
+            dataset: Product.dataset
+            key_columns:
+              - PriceSquared
+            name_column: PriceSquared
+            sort_column: PriceSquared
+
+          - unique_name: d_SKU
+            label: SKU
+            dataset: Product.dataset
+            key_columns:
+              - SKU
+            name_column: SKU
+            sort_column: SKU
+
+level_attributes:
+
+  - unique_name: Product Category
+    label: Product Category
+    dataset: Product.dataset
+    key_columns:
+      - Category
+    name_column: Category
+
+  - unique_name: Product Name
+    label: Product Name
+    dataset: Product.dataset
+    key_columns:
+      - SKU
+    name_column: Name

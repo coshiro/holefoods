@@ -1,0 +1,13 @@
+unique_name: country.dataset
+object_type: dataset
+label: country
+connection_id: AtScaleIRIS.connection
+table: country
+
+columns:
+  - name: ID
+    data_type: long
+  - name: Name
+    data_type: string
+  - name: region
+    data_type: long

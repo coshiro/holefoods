@@ -1,0 +1,47 @@
+unique_name: SalesTransaction.dataset
+object_type: dataset
+label: SalesTransaction
+connection_id: "AtScaleIRIS_${schema}.connection"
+table: salestransaction
+
+columns:
+  - name: AmountOfSale
+    data_type: "decimal(15,2)"
+  - name: BigSale
+    data_type: int
+    sql: CASE WHEN UnitsSold>5 THEN 1 ELSE 0 END
+  - name: Channel
+    data_type: string
+  - name: Comment
+    data_type: string
+  - name: Comments
+    data_type: string
+    sql: CASE WHEN Comment LIKE '%complained%' OR Comment LIKE '%ranted%' THEN 'Complaint'
+      WHEN Comment LIKE '%happy%' THEN 'Compliment' END
+  - name: DateOfSale
+    data_type: date
+  - name: DateOfSale_1
+    data_type: string
+    sql: CAST(DateOfSale AS VARCHAR(4000))
+  - name: Discount
+    data_type: "decimal(15,2)"
+  - name: DiscountType
+    data_type: string
+    sql: CASE WHEN Discount = 0 THEN 'None' WHEN Discount < .2 THEN '1-19%' WHEN Discount
+      >= .2 AND Discount < .5 THEN '20-49%' ELSE '50%+' END
+  - name: ID
+    data_type: long
+  - name: Latitude
+    data_type: double
+  - name: Longitude
+    data_type: double
+  - name: outlet
+    data_type: long
+  - name: product
+    data_type: string
+  - name: TargetAmount
+    data_type: "decimal(15,2)"
+  - name: UnitsSold
+    data_type: int
+  - name: ZipCode
+    data_type: string

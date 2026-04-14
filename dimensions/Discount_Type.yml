@@ -1,0 +1,22 @@
+unique_name: Discount_Type
+object_type: dimension
+label: Discount_Type
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: Discount_Type
+    label: Discount_Type
+
+    levels:
+
+      - unique_name: Discount_Type
+
+level_attributes:
+
+  - unique_name: Discount_Type
+    label: Discount_Type
+    dataset: SalesTransaction.dataset
+    key_columns:
+      - DiscountType
+    name_column: DiscountType

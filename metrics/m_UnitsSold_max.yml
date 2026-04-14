@@ -1,0 +1,6 @@
+unique_name: m_UnitsSold_max
+object_type: metric
+label: Max Units
+calculation_method: maximum
+dataset: SalesTransaction.dataset
+column: UnitsSold

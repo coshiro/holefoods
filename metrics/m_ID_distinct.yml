@@ -1,0 +1,6 @@
+unique_name: m_ID_distinct
+object_type: metric
+label: Count
+calculation_method: count distinct
+dataset: SalesTransaction.dataset
+column: ID

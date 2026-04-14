@@ -1,0 +1,22 @@
+unique_name: Channel
+object_type: dimension
+label: Channel
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: Channel
+    label: Channel
+
+    levels:
+
+      - unique_name: Channel
+
+level_attributes:
+
+  - unique_name: Channel
+    label: Channel
+    dataset: SalesTransaction.dataset
+    key_columns:
+      - Channel
+    name_column: Channel

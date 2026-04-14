@@ -1,0 +1,81 @@
+unique_name: HoleFoods
+object_type: model
+label: HoleFoods
+include_default_drillthrough: true
+
+relationships:
+
+  - unique_name: SalesTransaction.dataset_Outlet
+    from:
+      dataset: SalesTransaction.dataset
+      join_columns:
+        - outlet
+    to:
+      dimension: Outlet
+      level: Outlet_2
+
+  - unique_name: SalesTransaction.dataset_Product
+    from:
+      dataset: SalesTransaction.dataset
+      join_columns:
+        - product
+    to:
+      dimension: Product
+      level: Product Name
+
+  - unique_name: SalesTransaction.dataset_DateOfSale
+    from:
+      dataset: SalesTransaction.dataset
+      join_columns:
+        - DateOfSale
+    to:
+      dimension: DateOfSale
+      level: DaySold
+
+dimensions:
+  - Channel
+  - Comments
+  - Discount_Type
+  - Units_Sold
+
+metrics:
+
+  - unique_name: m_AmountOfSale_sum
+
+  - unique_name: m_BigSale_sum
+
+  - unique_name: m_ID_distinct
+
+  - unique_name: m_UnitsSold_max
+
+  - unique_name: m_UnitsSold_sum
+
+  - unique_name: 5 year avg growth
+
+  - unique_name: Growth over last period
+
+  - unique_name: Pct Sold
+
+  - unique_name: Product percent of total
+
+drillthroughs:
+
+  - unique_name: test
+    notes: |
+      click
+    attributes:
+
+      - name: Units_Sold
+        dimension: Units_Sold
+
+      - name: d_Population
+        dimension: Outlet
+
+      - name: d_Name
+        dimension: Product
+
+      - name: Channel
+        dimension: Channel
+
+    metrics:
+      - m_ID_distinct

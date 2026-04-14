@@ -1,0 +1,6 @@
+unique_name: m_AmountOfSale_sum
+object_type: metric
+label: Amount Sold
+calculation_method: sum
+dataset: SalesTransaction.dataset
+column: AmountOfSale

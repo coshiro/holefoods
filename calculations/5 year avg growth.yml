@@ -1,0 +1,4 @@
+unique_name: 5 year avg growth
+object_type: metric_calc
+label: 5 Year Avg Growth
+expression: "([DateOfSale].[Actual].CurrentMember,[Measures].[m_ID_distinct])-((ParallelPeriod([DateOfSale].[Actual].[YearSold],-4,DateOfSale.[Actual].CurrentMember),[Measures].[m_ID_distinct]))/(((ParallelPeriod([DateOfSale].[Actual].[YearSold],-4,DateOfSale.[Actual].CurrentMember),[Measures].[m_ID_distinct]))*5)"

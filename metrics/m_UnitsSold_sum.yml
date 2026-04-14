@@ -1,0 +1,6 @@
+unique_name: m_UnitsSold_sum
+object_type: metric
+label: Units Sold
+calculation_method: sum
+dataset: SalesTransaction.dataset
+column: UnitsSold

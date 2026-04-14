@@ -1,0 +1,11 @@
+unique_name: Region.dataset
+object_type: dataset
+label: Region
+connection_id: "AtScaleIRIS_${schema}.connection"
+table: region
+
+columns:
+  - name: ID
+    data_type: long
+  - name: Name
+    data_type: string

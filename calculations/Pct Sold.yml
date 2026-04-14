@@ -1,0 +1,6 @@
+unique_name: Pct Sold
+object_type: metric_calc
+label: Pct Sold
+expression: |
+  ([Product].[P1].CurrentMember,[Measures].[m_ID_distinct])/([Product].[P1].CurrentMember.Parent,[Measures].[m_ID_distinct])
+format: percent

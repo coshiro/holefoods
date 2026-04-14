@@ -1,0 +1,5 @@
+unique_name: Product percent of total
+object_type: metric_calc
+label: Product percent of total
+expression: "([Product].[P1].CurrentMember,[Measures].[m_ID_distinct])/([Product].[P1].[All],[Measures].[m_ID_distinct])"
+format: percent

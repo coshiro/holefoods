@@ -1,0 +1,32 @@
+unique_name: dateomniture.dataset
+object_type: dataset
+label: dateomniture
+connection_id: "AtScaleIRIS_${schema}.connection"
+table: dateomniture
+
+columns:
+  - name: AsDate
+    data_type: date
+    sql: CAST(fulldatealternatekey As Date)
+  - name: calendarquarter
+    data_type: int
+  - name: calendaryear
+    data_type: int
+  - name: datekey
+    data_type: long
+  - name: daynumberofmonth
+    data_type: int
+  - name: daynumberofweek
+    data_type: int
+  - name: englishdaynameofweek
+    data_type: string
+  - name: englishmonthname
+    data_type: string
+  - name: fulldatealternatekey
+    data_type: string
+  - name: irisdate
+    data_type: long
+  - name: monthnumberofyear
+    data_type: int
+  - name: weeknumberofyear
+    data_type: int

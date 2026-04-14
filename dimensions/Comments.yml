@@ -1,0 +1,22 @@
+unique_name: Comments
+object_type: dimension
+label: Comments
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: Comments
+    label: Comments
+
+    levels:
+
+      - unique_name: Comments
+
+level_attributes:
+
+  - unique_name: Comments
+    label: Comments
+    dataset: SalesTransaction.dataset
+    key_columns:
+      - Comments
+    name_column: Comments

@@ -1,0 +1,21 @@
+unique_name: Outlet.dataset
+object_type: dataset
+label: Outlet
+connection_id: "AtScaleIRIS_${schema}.connection"
+table: outlet
+
+columns:
+  - name: City
+    data_type: string
+  - name: country
+    data_type: long
+  - name: ID
+    data_type: long
+  - name: Latitude
+    data_type: double
+  - name: Longitude
+    data_type: double
+  - name: Population
+    data_type: int
+  - name: Type
+    data_type: string
