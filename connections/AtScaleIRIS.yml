@@ -1,6 +1,6 @@
-unique_name: AtScaleIRIS.connection
+unique_name: AtScaleIRIS
 label: AtScaleIRIS
 object_type: connection
 as_connection: AtScaleIRIS
-database: <YOUR DATABASE>
+database: default
 schema: MySample

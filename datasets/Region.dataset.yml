@@ -1,7 +1,7 @@
 unique_name: Region.dataset
 object_type: dataset
 label: Region
-connection_id: "AtScaleIRIS_${schema}.connection"
+connection_id: AtScaleIRIS
 table: region
 
 columns:

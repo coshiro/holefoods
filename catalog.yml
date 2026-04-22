@@ -1,6 +1,6 @@
-unique_name: MySample.catalog
+unique_name: HoleFoodsCat
 object_type: catalog
-label: MySample
+label: Hole Foods Category
 version: 1.1
 aggressive_agg_promotion: false
 build_speculative_aggs: false

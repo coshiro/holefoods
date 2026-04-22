@@ -1,7 +1,7 @@
 unique_name: Outlet.dataset
 object_type: dataset
 label: Outlet
-connection_id: "AtScaleIRIS_${schema}.connection"
+connection_id: AtScaleIRIS
 table: outlet
 
 columns:

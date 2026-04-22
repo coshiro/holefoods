@@ -1,6 +1,0 @@
-unique_name: "AtScaleIRIS_${schema}.connection"
-label: "AtScaleIRIS_${schema}"
-object_type: connection
-as_connection: AtScaleIRIS
-database: <YOUR DATABASE>
-schema: "${schema}"

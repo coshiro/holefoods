@@ -1,7 +1,7 @@
 unique_name: country.dataset
 object_type: dataset
 label: country
-connection_id: AtScaleIRIS.connection
+connection_id: AtScaleIRIS
 table: country
 
 columns:
