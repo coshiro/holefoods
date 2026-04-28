@@ -1,6 +1,6 @@
 unique_name: HoleFoodsCat
 object_type: catalog
 label: Hole Foods Category
-version: 1.1
+version: 1.6
 aggressive_agg_promotion: false
 build_speculative_aggs: false
